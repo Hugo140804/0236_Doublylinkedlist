@@ -85,6 +85,24 @@ void addNode()
                 return;
             }
             
+        if (current == START)
+        {
+            START = current->next
+            if (START != NULL)
+            {
+                START->prev = NULL;
+            }
+            else
+            {
+                current->prev->next = current->next;
+                if (current->next != NULL)
+                {
+                    current->next->prev = current->prev;
+                }
+                delete current;
+                cout << "Record with roll number " << rollNo << " deleted " << endl;
+            }
+        }
             
 
         }
