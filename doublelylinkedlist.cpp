@@ -9,3 +9,16 @@ class Node
         Node* next;
         Node* prev; 
 };
+
+class DoublelyLinkedList
+{
+    private:
+        Node *START;
+
+public:
+    DoubleLinkedListList()
+    {
+        START = NULL;
+    }
+
+    
